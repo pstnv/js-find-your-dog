@@ -1,0 +1,164 @@
+html {
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+* {
+	-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+}
+*::-moz-selection {
+	background-color: rgb(62, 92, 72, 0.6);
+	color: #f8ebe2;
+}
+*::selection {
+	background-color: rgb(62, 92, 72, 0.6);
+	color: #f8ebe2;
+}
+
+body {
+	margin: 0;
+	height: 100vh;
+	min-height: 650px;
+	background-color: #f8ebe2;
+	word-wrap: break-word;
+	text-align: center;
+	color: #3e5c48;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 650px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+#header {
+	margin: 15px 10px;
+	text-transform: uppercase;
+	font-size: 22px;
+}
+
+img {
+	width: 100%;
+	border-radius: 15px;
+}
+
+.question {
+	margin: 20px;
+	min-height: 60px;
+	width: 100%;
+	font-size: 28px;
+}
+.answer {
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+.buttons {
+	margin: 5px;
+	padding: 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+button {
+	margin: 0 10px;
+	padding: 15px 30px;
+	min-width: 220px;
+	border-radius: 15px;
+	border: 1px solid #3e5c48;
+	background-color: transparent;
+	text-transform: uppercase;
+	font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+	color: #3e5c48;
+	cursor: pointer;
+}
+
+@media all and (max-width:600px) {
+
+	#header {
+		margin: 15px 5px;
+		font-size: 20px;
+	}
+
+	img {
+		border-radius: 0;
+	}
+
+
+	#question {
+		margin: 15px 10px;
+		font-size: 26px;
+	}
+
+	button {
+		margin: 10px 5px;
+		padding: 15px 10px;
+		min-width: 140px;
+		font-size: 15px;
+	}
+}
+
+@media all and (max-width:400px) {
+
+	#header {
+		margin: 10px 5px;
+		font-size: 18px;
+	}
+
+
+	#question {
+		margin: 10px 5px;
+		font-size: 22px;
+	}
+
+	button {
+		margin: 5px;
+		padding: 10px 5px;
+		min-width: 120px;
+		font-size: 14px;
+	}
+}
+@media all and (max-width:330px) {
+
+	#header {
+		font-size: 16px;
+	}
+
+
+	#question {
+		font-size: 20px;
+	}
+
+	button {
+		min-width: 120px;
+		min-height: 60px;
+		font-size: 12px;
+	}
+}
+
+
+@media (hover:hover) {
+	button:hover {
+		background-color: #3e5c48;
+		color: #f8ebe2;
+	}
+}
